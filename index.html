@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -27,6 +27,67 @@
 
 
     <script src="app.js"></script>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simon Says Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- Home Section -->
+    <section id="home-screen" class="screen">
+      <h1>🎵 Simon Says 🎵</h1>
+      <p class="tagline">Test your memory. Follow the light!</p>
+
+      <button id="start-btn" class="start-btn">▶️ Start Game</button>
+
+      <div class="instructions">
+        <h2>📘 How to Play</h2>
+        <ul>
+          <li>Watch the pattern of lights & sounds.</li>
+          <li>Repeat the same sequence by clicking the color buttons.</li>
+          <li>The sequence gets longer each round!</li>
+        </ul>
+      </div>
+
+      <div class="rules">
+        <h2>⚠️ Game Rules</h2>
+        <ul>
+          <li>One wrong move = Game Over!</li>
+          <li>Try to beat your highest score!</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Game Section (hidden initially) -->
+    <section id="game-screen" class="screen hidden">
+      <h1 class="heading">Simon Says Game</h1>
+      <h2 class="heading" id="Highest">Highest Score: 0</h2>
+      <h2 class="heading" id="level">Level 0</h2>
+
+      <div class="btn-container">
+        <div class="line-one">
+          <div class="btn red" id="red"></div>
+          <div class="btn green" id="green"></div>
+        </div>
+        <div class="line-two">
+          <div class="btn blue" id="blue"></div>
+          <div class="btn yellow" id="yellow"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 
 </html>
