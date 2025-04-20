@@ -1,6 +1,6 @@
 document.getElementById("start-btn").addEventListener("click", () => {
-  document.getElementById("home-screen").classList.add("active");
-  document.getElementById("game-screen").classList.remove("active");
+  document.getElementById("home-screen").classList.remove("active");
+  document.getElementById("game-screen").classList.add("active");
 
   // Optionally trigger the game start
   startGame();
