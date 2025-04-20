@@ -2,15 +2,14 @@ document.getElementById("start-btn").addEventListener("click", () => {
   document.getElementById("home-screen").classList.remove("active");
   document.getElementById("game-screen").classList.add("active");
 
-  // Optionally trigger the game start
   startGame();
 });
 
-// Your original game logic goes below
+// original game logic goes below
 function startGame() {
-  // This should include initializing level, pattern, and listening for key/button presses
+  
   document.getElementById("level").textContent = "Level 1";
-  // Add your actual game start logic here
+
 let gameSeq = [];
 let userSeq = [];
 
