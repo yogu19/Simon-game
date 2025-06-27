@@ -1,46 +1,3 @@
-/* body{
-    text-align: center;
-    background-color: #3C3D37;
-    color: rgb(255, 255, 255);
-}
-
-.btn{
-    height: 200px;
-    width: 200px;
-    border: 5px solid black;
-    margin: 2rem;
-    border-radius: 2rem;
-}
-
-.btn-container{
-    display: flex;
-    justify-content: center;
-}
-
-.red{
-    background-color: #d95980;
-}
-
-.blue{
-    background-color: #819ff9;
-}
-
-.green{
-    background-color: #63aac0;
-}
-
-.yellow{
-    background-color: #f99b45;
-}
-
-.flash{
-    background-color: white;
-}
-
-.userFlash{
-    background-color: green;
-}
- */
 /* Base styles */
 body {
   text-align: center;
@@ -59,22 +16,36 @@ body {
 
 h1 {
   font-size: 3rem;
-  margin-top: 1rem;
+  margin-top: 0rem;
 }
 
 h2 {
   font-size: 1.5rem;
-  margin: 0.5rem 0;
+  margin: 0rem 0rem;
+}
+
+#soundBtn {
+  font-size: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #333;
+}
+
+#soundBtn:hover {
+  color: #4CAF50;
 }
 
 /* Game Buttons */
 .btn {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 250px;
   border: 5px solid black;
-  margin: 1rem;
+  margin: 2rem;
   border-radius: 2rem;
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .btn-container {
@@ -84,13 +55,29 @@ h2 {
 }
 
 /* Color Styles */
-.red { background-color: #d95980; }
-.blue { background-color: #819ff9; }
-.green { background-color: #63aac0; }
-.yellow { background-color: #f99b45; }
+.red {
+  background-color: #d95980;
+}
 
-.flash { background-color: white !important; }
-.userFlash { background-color: green !important; }
+.blue {
+  background-color: #819ff9;
+}
+
+.green {
+  background-color: #63c068;
+}
+
+.yellow {
+  background-color: #f99b45;
+}
+
+.flash {
+  background-color: #3C3D37 !important;
+}
+
+.userFlash {
+  background-color: rgb(253, 255, 254) !important;
+}
 
 /* Home Screen Styling */
 #home-screen {
@@ -113,7 +100,8 @@ h2 {
   background-color: #1ba74e;
 }
 
-.instructions, .rules {
+.instructions,
+.rules {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 20px;
   margin: 20px auto;
@@ -122,7 +110,8 @@ h2 {
   max-width: 600px;
 }
 
-.instructions h2, .rules h2 {
+.instructions h2,
+.rules h2 {
   font-size: 1.4rem;
   color: #f9d423;
   margin-bottom: 0.5rem;
