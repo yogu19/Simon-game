@@ -27,7 +27,6 @@ document.getElementById("start-btn").addEventListener("click", () => {
 function startGame() {
   let gameSeq = [];
   let userSeq = [];
-
   let started = false;
   let level = 0;
   let h2 = document.querySelector("#level");
