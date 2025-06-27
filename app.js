@@ -68,7 +68,6 @@ function startGame() {
     let randColor = btns[randIdx];
     let randbtn = document.querySelector(`.${randColor}`);
     gameSeq.push(randColor);
-    console.log(gameSeq);
     btnFlash(randbtn);
   }
 
@@ -99,7 +98,6 @@ function startGame() {
     userFlash(userBtn);
 
     userSeq.push(userBtn.getAttribute("id"));
-    // console.log(userSeq);
     checkAns(userSeq.length - 1);
   }
 
@@ -112,7 +110,6 @@ function startGame() {
   function reset() {
     document.querySelector("#Highest").innerText = `Highest score ${highScore(score)}`;
     started = false;
-
     level = 0;
     score = 0;
     userSeq = [];
